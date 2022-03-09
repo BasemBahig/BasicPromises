@@ -1,6 +1,7 @@
 //console.log('script');
 const Base_URL='https://jsonplaceholder.typicode.com/'
 const UpdatemyAPI=(data)=>{
+    const result  =  document.getelementbyid( elementid ,'result')
     console.log(data)
 }
 
@@ -27,3 +28,13 @@ console.log(response)
 }
 
 getPhoto()
+
+new promise(function(resolve, reject){
+    var img = document.createElement('img');
+    img.src = 'image.jpg';
+    img.onload = resolve;
+    img.onerror = reject;
+    document.body.appendChild(img);
+})
+.then(finsihLoading)
+.catch(showAlert);  
