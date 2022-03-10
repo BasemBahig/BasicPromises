@@ -1,7 +1,7 @@
 //console.log('script');
 const Base_URL='https://jsonplaceholder.typicode.com/'
 const UpdatemyAPI=(data)=>{
-    const result  =  document.getelementbyid( elementid ,'result')
+    const result  =  document.getElementById( elementid ,'result')
     console.log(data)
 }
 
@@ -16,7 +16,7 @@ try{
 const response = await fetch(input `${Base_URL}/posts`)
 if (response.status ===200){
     const data = await response.json()
-    console.log(data)
+    console.log(data);
 
     UpdatemyAPI()
 }       
@@ -29,12 +29,19 @@ console.log(response)
 
 getPhoto()
 
-new promise(function(resolve, reject){
+const promise = new Promise(function(resolve, reject){
     var img = document.createElement('img');
-    img.src = 'image.jpg';
+    img.src = 'img.jpg';
     img.onload = resolve;
     img.onerror = reject;
     document.body.appendChild(img);
+    resolve()
 })
 .then(finsihLoading)
-.catch(showAlert);  
+.catch(showAlert, 'error');  
+function finsihLoading(){
+
+}
+function showAlert(){
+    console.log('Error')
+}
