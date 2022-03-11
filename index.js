@@ -1,18 +1,22 @@
 //console.log('script');
-const Base_URL='https://jsonplaceholder.typicode.com/'
-const UpdatemyAPI=(data)=>{
+
+
+/*const UpdatemyAPI=(data)=>{
     const result  =  document.getElementById( elementid ,'result')
     console.log(data)
+}*/
+const Base_URL="https://jsonplaceholder.typicode.com/"
+function getPhoto(){
+    //https://jsonplaceholder.typicode.com/posts
+    fetch(`https://jsonplaceholder.typicode.com/photos`)
+    .then(response => response.json()) 
+    .then(data=>{
+        console.log(data)
+    })
 }
-
-async function getPhoto(){
-    //https://jsonplaceholder.typicode.com/photos
-    //fetch(input `${Basic}/posts`)
-    //.then(response => response.json()) 
-   // .then(data=>{
-     //   console.log(data)
+getPhoto()
   
-try{
+/*try{
 const response = await fetch(input `${Base_URL}/posts`)
 if (response.status ===200){
     const data = await response.json()
@@ -25,11 +29,11 @@ console.log(response)
     console.log(e)
 }
 
-}
+}*/
 
-getPhoto()
+/*getPhoto()*/  
 
-const promise = new Promise(function(resolve, reject){
+/*const promise = new Promise(function(resolve, reject){
     var img = document.createElement('img');
     img.src = 'img.jpg';
     img.onload = resolve;
@@ -43,5 +47,4 @@ function finsihLoading(){
 
 }
 function showAlert(){
-    console.log('Error')
-}
+    console.log('Error')*/
