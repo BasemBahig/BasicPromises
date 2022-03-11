@@ -1,0 +1,20 @@
+{
+  "name": "baiscpromises",
+  "version": "1.0.0",
+  "description": "the main purpose from this testing project that to learn how to apply Promises in Javascript\r #Resurces: \r Udacity Free Courses\r JavaScript Promises\r https://classroom.udacity.com/courses/ud898\r https://github.com/udacity/exoplanet-explorer\r https://polymer-library.polymer-project.org/3.0/docs/devguide/feature-overview\r http://www.exoplanetexplorer.com/\r https://pwa-starter-kit.polymer-project.org/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasemBahig/BaiscPromises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BasemBahig/BaiscPromises/issues"
+  },
+  "homepage": "https://github.com/BasemBahig/BaiscPromises#readme"
+}

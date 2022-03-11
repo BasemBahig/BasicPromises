@@ -54,7 +54,7 @@ console.log(response)
 
 }
 ReadMyAPI()
-/*const promise = new Promise(function(resolve, reject){
+const promise = new Promise(function(resolve, reject){
     var img = document.createElement('img');
     img.src = 'img.jpg';
     img.onload = resolve;
@@ -68,4 +68,5 @@ function finsihLoading(){
 
 }
 function showAlert(){
-    console.log('Error')*/
+    console.log('Error')
+}
