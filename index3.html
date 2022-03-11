@@ -24,7 +24,6 @@
 		function ready() {
 			/*
 			Your code goes here!
-
 			Instructions:
 			(1) Set network throttling.
 			(2) Wrap an event listener for readystatechange in a Promise.
@@ -37,6 +36,9 @@
 				/*
 				Your code here too!
 				 */
+				const promise = new Promise ((resolve, reject)=>{
+					console.log('responsive')
+				})
 			});
 		};
 
