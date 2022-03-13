@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize-Image-API</title>
+    <!-- google fonts from my previous web proffisional project -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id = "app">
+        <div class ="holder headline">
+          ND Web Advanced API
+        </div>
+        <img class="responsive" src="San_Francisco_Market_Street_between_4th_and_5th_St.jpg" height="300" width="300" alt="SF Market Street">
+        <button id="generate" type = "submit" > Resize </button>
+        <div class ="holder zip">
+            <label for="width">Enter Image Width here</label>
+            <input type="text" id="width" placeholder="enter Image Width here">
+          </div>
+
+          <div class ="holder zip">
+            <label for="height">Enter Image Height here</label>
+            <input type="text" id="height" placeholder="enter Image Height here">
+          </div>
+          <script src="./img.js"></script>
+    
+</body>
+</html>
