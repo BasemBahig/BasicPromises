@@ -17,3 +17,7 @@ for repo in new project folder to apply required testing in the other project fo
 # Testing using npm
 npm init -y
 npm install -g gulp bower
+
+
+Install express cors body-parser
+npm install express cors body-parser
